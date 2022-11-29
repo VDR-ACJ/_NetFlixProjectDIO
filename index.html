@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/main.css">
+
+<!--responsividade-->
+<link rel="stylesheet" href="style/responsive.css">
+    <!-- owl css-->
+<link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+<link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+   
+    <title>SUPERFLIX</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">SUPERFLIX</h2>
+            <nav>
+                <a href="https://pt.wikipedia.org/wiki/Super_Nintendo_Entertainment_System" target="_blank">Historia</a> 
+                <a href="https://alvanista.com/historia_dos_games/posts/3838713-versoes-e-acessorios-do-super-nintendo" target="_blank">Acessorios</a> 
+
+                <a href="https://www.nintendo.com/" target="_blank">Nintendo</a> 
+            </nav>
+        </div>
+    </header>
+    <main>
+       
+        <div class="filme-principal" id="filme_principal">
+            <div class="container" id="div_acoes">
+                <h3 class="titulo" id="titulo">SUPER NINTENDO </h3>
+                <p class="descricao" id="descricao">ENTERTAINMENT SYSTEM</p>
+                <div class="botoes" >
+                    <button role= "button" title="Clique aqui para assitir" class="botao" id="btn_assistir" onclick="modalVideo(this)" alt="snes" ><i class="fa-solid fa-play"></i>
+                        POWER</button>
+                    <button role= "button" title="Clique aqui para começar do Zero" class="botao" id="btn_reset"  onclick="resetPagina()" alt="0"><i class="fa-solid fa-circle-info"></i>
+                        RESET</button>
+                    <button role= "button" title="Gostei" class="botao_thumbs botao_thumbs_up" id="btn_thumbs_up" onclick="thumbs_clicado(this)" alt="thumbs-up" ><i class="fa-solid fa-thumbs-up"></i>
+                        </button>
+                    <button role= "button" title="Não Gostei" class="botao_thumbs botao_thumbs_down" id="btn_thumbs_down" onclick="thumbs_clicado(this)" alt="thumbs-dowm" ><i class="fa-solid fa-thumbs-down"></i>
+                        </button>
+                        
+                </div>    
+            </div>
+              
+        </div>
+         <!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close" >&times;</span>
+
+    <iframe id="iframevideo" class="modal-content" width="90%" height="90%" src="" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </iframe>
+    <div id="caption"></div>
+  </div>
+  <!-- fim modal-->
+    </main>
+    <div id="div-listas" class="listas">
+
+    <div class="bestsellers"><p>Mais assistidos</p></div>
+    <div class="carrosel-jogos">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img id='jg1' onclick="gameSeleciona(this)" class="box-jogo" src="img/consoles/snes/capas/SuperMarioWorld(USA).png" alt="Super Mario World" srcset="">
+            </div>
+            <div class="item">
+                <img id='jg2'  onclick="gameSeleciona(this)" class="box-jogo" src="img/consoles/snes/capas/DonkeyKongCountry2.png" alt="Donkey Kong Country 2: Diddy's Kong Quest" srcset="">
+            </div>
+            <div  class="item">
+                <img id='jg3'  onclick="gameSeleciona(this)" class="box-jogo" src="img/consoles/snes/capas/SuperMarioKart.png" alt="Mario Kart" srcset="">
+            </div>
+            <div class="item">
+                <img id='jg4'  onclick="gameSeleciona(this)" class="box-jogo" src="img/consoles/snes/capas/DonkeyKongCountry.png" alt="Donkey Kong Country" srcset="">
+            </div>
+            <div  class="item">
+                <img id='jg5'  onclick="gameSeleciona(this)" class="box-jogo" src="img/consoles/snes/capas/DonkeyKongCountry3.png" alt="Donkey Kong Country 3: Dixie Kong's Double Trouble" srcset="Donkey Kong Country 2: Diddy's Kong Quest">
+            </div>
+            <div class="item">
+                <img id='jg6' onclick="gameSeleciona(this)" class="box-jogo" src="img/consoles/snes/capas/MK3U.png" alt="Ultimate Mortal Kombat 3" srcset="">
+            </div>
+            <div class="item">
+                <img id='jg7' onclick="gameSeleciona(this)" class="box-jogo" src="img/consoles/snes/capas/MegaMan7.png" alt="Mega Man 7" srcset="">
+            </div>
+            <div class="item">
+                <img id='jg8' onclick="gameSeleciona(this)" class="box-jogo" src="img/consoles/snes/capas/SuperMarioWorld2-YoshisIsland(USA).png" alt="Super Mario World 2 Yoshi's Island" srcset="">
+            </div>
+        </div>
+
+    </div>
+    <div class="jogos-aleatorios"><p>Outros</p></div>
+    <div class="carrosel-jogos">
+        <div class="owl-carousel owl-theme">
+            <div class="item zoom">
+                <img id='jg9' onclick="gameSeleciona(this)" class="box-jogo" src="img/consoles/snes/capas/StarFox.png" alt="Star Fox" srcset="">
+            </div>
+            <div class="item">
+                <img id='jg10' onclick="gameSeleciona(this)" class="box-jogo" src="img/consoles/snes/capas/ChronoTrigger.png" alt="Chrono Trigger" srcset="">
+            </div>
+            <div class="item">
+                <img id='jg11' onclick="gameSeleciona(this)" class="box-jogo" src="img/consoles/snes/capas/LegendofZeldaThe-ALinktothePast.png" alt="Legend of Zelda The - A Link to the Past" srcset="">
+            </div>
+            <div class="item">
+                <img id='jg12' onclick="gameSeleciona(this)" class="box-jogo" src="img/consoles/snes/capas/ISSSD.png" alt="International Super Star Soccer Deluxe" srcset="">
+            </div>
+            <div class="item">
+                <img id='jg13' onclick="gameSeleciona(this)" class="box-jogo" src="img/consoles/snes/capas/SuperBomberman(USA).png" alt="Super Bomberman" srcset="">
+            </div>
+            <div class="item">
+                <img id='jg14' onclick="gameSeleciona(this)" class="box-jogo" src="img/consoles/snes/capas/Doom.png" alt="DOOM" srcset="">
+            </div>
+        </div>
+
+    </div>
+</div>
+    <script src="https://kit.fontawesome.com/d886d42af6.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+</body>
+</html>

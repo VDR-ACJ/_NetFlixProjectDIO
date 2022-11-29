@@ -1,0 +1,258 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+    --corsnes:hsl(0, 0%, 90%);
+    --corsnes2:rgb(200 196 206);
+    --botaosens:#403086;
+    --botaosnesescuro:#2d1d5c;
+    --controlebotaoclaro:hsl(243deg 54% 79%);
+    --ejectsnes:hsl(290deg 4% 67%);
+    --cablenes:hsl(283deg 4% 35%);
+}
+@font-face {
+    font-family: nintendo;
+    src: url(../img/consoles/snes/fontes/Pretendo.ttf)
+  }
+  @font-face {
+    font-family: snes;
+    src: url(../img/consoles/snes/fontes/SNES_Italic.ttf)
+  }
+  @font-face {
+    font-family: supermario;
+    src: url(../img/consoles/snes/fontes/CHLORINP.TTF)
+  }
+  
+/*Reset de css para renderizar em navegadores diferentes com a mesma medida*/
+*{
+    margin: 0;
+    padding: 0;
+    /*não rompe a saida da caixa caso nao caiba dentro do container*/
+    box-sizing: border-box;
+}
+/*Base*/
+body{
+    background:var(--corsnes);
+    font-family: snes,'Arial', Times, serif;
+    color: white;
+    Padding: 0 4%;
+}
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo{
+ margin-left: 5px;
+ color: var(--botaosens);
+ font-family: snes,'Arial Black', Times;
+ font-size: 50px;
+ padding-left: 2px;
+ padding-right: 2px;
+}
+
+header nav a{
+    text-decoration: none;
+    color:rgb(89, 88, 88);
+    margin-right: 10px;
+}
+header nav a:hover{
+    color:var(--botaosnesescuro);
+}
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0)100%), url('/img/consoles/snes/snes-super-nintendo-uhd-4k-wallpaper.jpg');
+    
+    height: 500px;
+    min-height: 500px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    /* segue a direcao do flex o justify content*/
+    justify-content: center;
+    align-items: flex-start;
+}
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 50px;
+    font-family: supermario;
+    
+}
+
+.botao{
+    background-color:var(--botaosnesescuro,0.5) ;
+    border: none;
+    color: white;
+    padding:15px 30px ;
+    margin-right: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-family: snes;
+}
+.botao:hover{
+    background-color:white;
+    color: var(--botaosnesescuro);
+}
+
+.botao i{
+    margin-right:  8px;
+}
+
+.container{
+    margin-left: 20px;
+    
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    max-height: 200px;
+    max-width: 400px;
+    min-height: 200px;
+    height: 30%;
+    width: 30%;
+    display: block;
+    cursor: pointer;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
+.carrosel-jogos{
+    margin-top: 5px;
+    
+}
+
+.box-jogo{
+    height: 25%;
+    width: 25%;
+    display: block;
+    cursor: pointer;
+}
+
+.item:hover{
+    transition-duration: 2s;
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+        
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.bestsellers{
+    margin-top: 15px;
+    text-align: left;
+    color: var(--botaosens);
+    font-weight: bold;
+    font-family: nintendo,Helvetica, Geneva, Tahoma, sans-serif;
+}
+.jogos-aleatorios{
+    margin-top: 15px;
+    text-align: left;
+    color: var(--botaosens);
+    font-weight: bold;
+    font-family: nintendo,Helvetica, Geneva, Tahoma, sans-serif;
+}
+
+
+
+/* imagens modal https://www.w3schools.com/css/css3_images.asp*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 90%;
+    
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    animation-name: zoom;
+    animation-duration: 0.9s;
+  }
+  
+  @keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+ 
+.botao_thumbs{
+  font-size: 30px;
+  padding: 5px;
+  background: none;
+  color: white;
+  border: none;
+
+}
+.botao_thumbs_up :hover{
+  font-size: 40px;
+  transition: 1s all;
+  padding: 5px;
+  color: green;
+  border: none;
+}
+.botao_thumbs_down :hover{
+  font-size: 40px;
+  transition: 1s all;
+  padding: 5px;
+  color: red;
+  border: none;
+}
