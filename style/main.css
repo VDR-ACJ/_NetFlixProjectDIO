@@ -49,6 +49,7 @@ header .logo{
  font-size: 50px;
  padding-left: 2px;
  padding-right: 2px;
+ cursor:none;
 }
 
 header nav a{
@@ -100,6 +101,8 @@ header nav a:hover{
 .botao:hover{
     background-color:white;
     color: var(--botaosnesescuro);
+    padding:20px 45px ;
+    transition: 2s all;
 }
 
 .botao i{
@@ -125,10 +128,6 @@ header nav a:hover{
     cursor: pointer;
 }
 
-.carrosel-filmes{
-    margin-top: 5px;
-}
-
 .carrosel-jogos{
     margin-top: 5px;
     
@@ -142,12 +141,10 @@ header nav a:hover{
 }
 
 .item:hover{
-    transition-duration: 2s;
+    transition-duration: 3s;
     -ms-transform: scale(1.2); /* IE 9 */
     -webkit-transform: scale(1.2); /* Safari 3-8 */
     transform: scale(1.2);
-        
-    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .bestsellers{
