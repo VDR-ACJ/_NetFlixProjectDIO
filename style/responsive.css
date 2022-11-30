@@ -17,6 +17,13 @@
     .filme-principal .titulo{
         font-size: 30px;
     }
+    .modal-content {
+        width: 100%;
+      }
+      header .logo{
+        margin-left: 0px;
+      }
+
 }
 @media screen and (min-width:1000px){
 
@@ -24,9 +31,3 @@
         width: 50%;
     }
 }
- /* 100% Image Width on Smaller Screens */
- @media only screen and (max-width: 700px){
-    .modal-content {
-      width: 100%;
-    }
-  }

@@ -43,7 +43,7 @@ header .container{
     justify-content: space-between;
 }
 header .logo{
- margin-left: 5px;
+ margin-left: 15px;
  color: var(--botaosens);
  font-family: snes,'Arial Black', Times;
  font-size: 50px;
@@ -59,6 +59,15 @@ header nav a{
 }
 header nav a:hover{
     color:var(--botaosnesescuro);
+}
+header{
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  transition: background-color .4s;
+  background: var(--corsnes);
+  width: 100%;
 }
 /*filme principal*/
 .filme-principal{
@@ -169,7 +178,7 @@ header nav a:hover{
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 3; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
@@ -252,4 +261,17 @@ header nav a:hover{
   padding: 5px;
   color: red;
   border: none;
+}
+footer {
+  position: static;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  color:#fff;
+  background: var(--botaosnesescuro);
+}
+body > footer > p{
+    padding: 5px;
+    margin: 2px;
+  text-align: center;
 }
