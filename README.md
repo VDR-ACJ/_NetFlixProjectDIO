@@ -1,6 +1,6 @@
 # _NETFLIX_Project_DIO
 
-Projeto criado para o desafio "Recriando a Página do Netflix" utilizando HTML, CSS e Javascript.
+Projeto criado para o desafio "Recriando a interface do Netflix" utilizando HTML, CSS e Javascript.
 Em relação ao projeto base, foram incrementadas algumas funcionalidades: Janela Modal abrindo vídeo personalizado do item clicado no carrossel de opções, efeitos e ações para os botões combinando JS e CSS, inclusão de fontes personalizadas "arquivos disponíveis no projeto" e alguns conceitos de tela responsivos em itens da página para que a mesma se adapte a diferentes tamanhos de tela.
 
 <br>Referência: https://github.com/felipeAguiarCode/netflix-clone
